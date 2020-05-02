@@ -1,9 +1,10 @@
 import { title } from "assets/jss/material-kit-react.js";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
 const productStyle = {
   section: {
     padding: "70px 0",
-    textAlign: "center"
+    textAlign: "space-evenly"
   },
   title: {
     ...title,
@@ -14,6 +15,9 @@ const productStyle = {
   },
   description: {
     color: "#999"
+  },
+  images: {
+    ...imagesStyles
   }
 };
 

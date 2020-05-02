@@ -21,7 +21,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
-import CarrouserlSection from "./Sections/CarrouselSection"
+
 
 const dashboardRoutes = [];
 
@@ -60,7 +60,6 @@ export default function LandingPage(props) {
                 <i className="fas fa-play" />
                 Watch video
               </Button>
-              <CarrouserlSection />
             </GridItem>
           </GridContainer>
         </div>
