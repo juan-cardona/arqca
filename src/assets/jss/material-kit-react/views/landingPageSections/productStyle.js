@@ -16,9 +16,7 @@ const productStyle = {
   description: {
     color: "#999"
   },
-  images: {
-    ...imagesStyles
-  }
+...imagesStyles
 };
 
 export default productStyle;

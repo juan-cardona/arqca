@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames"
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -8,38 +10,60 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
 
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
 import image1 from "assets/img/bg.jpg";
+import image2 from "assets/img/img1.jpg";
+import image3 from "assets/img/img2.jpg";
 
 const useStyles = makeStyles(styles);
 
 export default function ProductSection() {
   const classes = useStyles();
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgFluid
+  );
   return (
     <div className={classes.section}>
       <GridContainer justify="space-evenly">
-        <GridItem xs={4} sm={4} md={4}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+        <GridItem xs={12} sm={12} md={3}>
+          <h2 className={classes.title}>Arquitectura para vivir.</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          Nuestra arquitectura es cercana, humana y sensata. 
+          Queremos obtener la mejor solución posible para cada proyecto, 
+          buscando siempre la satisfacción plena de aquellos que lo vayan a habitar. 
+          Para ello, buscamos siempre la excelencia en todo lo que hacemos y 
+          lo hacemos porque nos apasiona nuestro trabajo. 
           </h5>
         </GridItem>
-        <GridContainer>
-            <Card plain>
-              <GridItem xs={4} sm={4} md={4}>
-                <img src={image1} alt="..." />
+              <GridItem xs={12} sm={12} md={6}>
+                <Card plain>
+                  <img src={image2} alt="..."  className={imageClasses}/>
+                </Card>
               </GridItem>
-            </Card>
-        </GridContainer>
+      </GridContainer>      
+      <GridContainer justify="space-evenly">
+        <GridItem xs={12} sm={12} md={3}>
+          <h2 className={classes.title}>Productos para emocionar.</h2>
+          <h5 className={classes.description}>
+          Racional, analítico y por supuesto, emocional. 
+          El diseño es la herramienta más potente que un producto pueda tener.
+           Estudiamos cada caso desde la primera idea hasta su total 
+           desarrollo con mucho mimo y pasión en cada paso que damos. 
+           Nuestro mayor objetivo es mejorar la vida de las personas 
+           y el mundo en el que vivimos, a través de productos sostenibles 
+           en todos sus aspectos que cumplan con las premisas 
+           estratégicas, empresariales y sociales.
+          </h5>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={6}>
+                <Card plain>
+                  <img src={image3} alt="..."  className={imageClasses}/>
+                </Card>
+              </GridItem>
       </GridContainer>
     </div>
   );

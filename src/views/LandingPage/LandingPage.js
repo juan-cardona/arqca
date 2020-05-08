@@ -33,9 +33,9 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
+        color="white"
         routes={dashboardRoutes}
-        brand="Arqca"
+        brand=""
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -53,12 +53,12 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://imgs.xkcd.com/comics/to_taste.png"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" />
-                Watch video
+                Arquitectura
               </Button>
             </GridItem>
           </GridContainer>
@@ -67,7 +67,6 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
           <WorkSection />
         </div>
       </div>
