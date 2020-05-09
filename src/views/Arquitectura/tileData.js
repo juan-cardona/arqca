@@ -26,6 +26,37 @@ const tileData = [
     author: 'author',
     cols: 1,
   },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+    cols: 1,
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+    cols: 1,
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+    cols: 1,
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+    cols: 1,
+  },
+  {
+    img: image,
+    title: 'Image',
+    author: 'author',
+    cols: 1,
+  },
+  
 ];
 
 export default tileData

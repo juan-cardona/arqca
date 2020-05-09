@@ -47,7 +47,7 @@ export default function LandingPage(props) {
       <Parallax filter image={require("assets/img/bghome.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
+            <GridItem xs={12} sm={12} md={4}>
               <h1 className={classes.title}>Descubre tu nuevo hogar.</h1>
               <br />
               <Button

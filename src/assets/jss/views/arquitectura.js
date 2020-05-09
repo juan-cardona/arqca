@@ -1,6 +1,17 @@
 import { container, title } from "assets/jss/material-kit-react.js";
+import { spacing } from '@material-ui/system';
 
 const landingPageStyle = {
+   root: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    marginTop: "30px",
+   },
+   gridList: {
+    width: 1600,
+    height: 500,
+  },
   container: {
     zIndex: "12",
     color: "#FFFFFF",
